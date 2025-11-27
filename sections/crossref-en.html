@@ -1,0 +1,1002 @@
+<h2 id="crossreference" class="list">Cross-reference for Working Draft classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Working Draft.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ActuatingDevice" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#ActuatingDevice"> <span>Actuating Device</span> </a></li>
+  <li><a href="#Attribute" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Attribute"> <span>Attribute</span> </a></li>
+  <li><a href="#Circle" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Circle"> <span>Circle</span> </a></li>
+  <li><a href="#Coverage" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Coverage"> <span>Coverage</span> </a></li>
+  <li><a href="#http://purl.oclc.org/NET/ssnx/ssn#Device" title="http://purl.oclc.org/NET/ssnx/ssn#Device"> <span>Device</span> </a></li>
+  <li><a href="#Entity" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity"> <span>Entity</span> </a></li>
+  <li><a href="#Metadata" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Metadata"> <span>Metadata</span> </a></li>
+  <li><a href="#Object" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Object"> <span>Object</span> </a></li>
+  <li><a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point"> <span>Point</span> </a></li>
+  <li><a href="#Polygon" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Polygon"> <span>Polygon</span> </a></li>
+  <li><a href="#Rectangle" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Rectangle"> <span>Rectangle</span> </a></li>
+  <li><a href="#http://purl.oclc.org/NET/ssnx/ssn#SensingDevice" title="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"> <span>Sensing Device</span> </a></li>
+  <li><a href="#Service" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service"> <span>Service</span> </a></li>
+  <li><a href="#TagDevice" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#TagDevice"> <span>Tag Device</span> </a></li>
+  <li><a href="#VirtualEntity" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#VirtualEntity"> <span>Virtual Entity</span> </a></li>
+ </ul>
+ <div class="entity" id="ActuatingDevice">
+  <h3>Actuating Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#ActuatingDevice</p>
+  <div class="comment">
+   <span class="markdown">Device that can actuate over an object or QuantityKind.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.oclc.org/NET/ssnx/ssn#Device" title="http://purl.oclc.org/NET/ssnx/ssn#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Attribute">
+  <h3>Attribute<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Attribute</p>
+  <div class="comment">
+   <span class="markdown">An attribute of an IoT object that can be exposed by an IoT service (i.e. a room (IoT Object) has a temperature (Attribute), that can be exposed by a temperature sensor (IoT device).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasQuantityKind" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind">has Quantity Kind</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasAttribute" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasAttribute">has Attribute</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Circle">
+  <h3>Circle<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Circle</p>
+  <div class="comment">
+   <span class="markdown">Circle coverage it needs the location of the sensor as the centre of the circle and the radius as a DataProperty.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Coverage" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Coverage">Coverage</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#radius" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#radius">radius</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Coverage">
+  <h3>Coverage<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Coverage</p>
+  <div class="comment">
+   <span class="markdown">The coverage of an IoT device (i.e. a temperature sensor inside a room has a coverage of that room).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Circle" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Circle">Circle</a> <sup class="type-c" title="class">c</sup>, <a href="#Polygon" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Polygon">Polygon</a> <sup class="type-c" title="class">c</sup>, <a href="#Rectangle" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Rectangle">Rectangle</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCoverage" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasCoverage">has Coverage</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.oclc.org/NET/ssnx/ssn#Device">
+  <h3>Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/ssnx/ssn#Device</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://purl.oclc.org/NET/ssnx/ssn#System" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#System">System</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ActuatingDevice" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#ActuatingDevice">Actuating Device</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.oclc.org/NET/ssnx/ssn#SensingDevice" title="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice">Sensing Device</a> <sup class="type-c" title="class">c</sup>, <a href="#TagDevice" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#TagDevice">Tag Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#exposedBy" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposedBy">exposed By</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCoverage" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasCoverage">has Coverage</a> <sup class="type-op" title="object property">op</sup>, <a href="#id" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#id">id</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#exposes" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposes">exposes</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Entity">
+  <h3>Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity</p>
+  <div class="comment">
+   <span class="markdown">Any object that is relevant from a user or application perspective. (IoT-A Definition)</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#Object" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Object">Object</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#VirtualEntity" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#VirtualEntity">Virtual Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasAttribute" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasAttribute">has Attribute</a> <sup class="type-op" title="object property">op</sup>, <a href="#id" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#id">id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isAssociatedWith" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isAssociatedWith">is Associated With</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Metadata">
+  <h3>Metadata<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Metadata</p>
+  <div class="comment">
+   <span class="markdown">Class used to describe properties that cannot be described by QuantityKind and Units. i.e. the resolution of a sensor.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#metadataType" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataType">metadata Type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#metadataValue" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataValue">metadata Value</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasMetadata" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasMetadata">has Metadata</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Object">
+  <h3>Object<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Object</p>
+  <div class="comment">
+   <span class="markdown">IoT entity</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasAttribute" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasAttribute">has Attribute</a> <sup class="type-op" title="object property">op</sup>, <a href="#isAssociatedWith" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isAssociatedWith">is Associated With</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+  <h3>Point<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#Point</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2003/01/geo/wgs84_pos#alt" target="_blank" title="http://www.w3.org/2003/01/geo/wgs84_pos#alt">alt</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="altRelative" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative">alt Relative</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="http://www.w3.org/2003/01/geo/wgs84_pos#lat" target="_blank" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat">lat</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="http://www.w3.org/2003/01/geo/wgs84_pos#long" target="_blank" title="http://www.w3.org/2003/01/geo/wgs84_pos#long">long</a> <sup class="type-ap" title="annotation property">ap</sup>, <a href="relativeLocation" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation">relative Location</a> <sup class="type-ap" title="annotation property">ap</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#location" title="http://www.w3.org/2003/01/geo/wgs84_pos#location">location</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Polygon">
+  <h3>Polygon<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Polygon</p>
+  <div class="comment">
+   <span class="markdown">The coverage is made up by linking several points by strait lines.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Coverage" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Coverage">Coverage</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Rectangle">
+  <h3>Rectangle<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Rectangle</p>
+  <div class="comment">
+   <span class="markdown">The coverage is made up by giving two points which are the opposite corners of a rectangle.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Coverage" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Coverage">Coverage</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice">
+  <h3>Sensing Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/ssnx/ssn#SensingDevice</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.oclc.org/NET/ssnx/ssn#Device" title="http://purl.oclc.org/NET/ssnx/ssn#Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="http://purl.oclc.org/NET/ssnx/ssn#Sensor" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSensingDevice" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasSensingDevice">has Sensing Device</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Service">
+  <h3>Service<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service</p>
+  <div class="comment">
+   <span class="markdown">Service provided by an IoT Device</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#endpoint" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#endpoint">endpoint</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#exposes" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposes">exposes</a> <sup class="type-op" title="object property">op</sup>, <a href="#interfaceDescription" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription">interface Description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#interfaceType" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceType">interface Type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isOnline" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isOnline">is Online</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#exposedBy" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposedBy">exposed By</a> <sup class="type-op" title="object property">op</sup>, <a href="#isAssociatedWith" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isAssociatedWith">is Associated With</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TagDevice">
+  <h3>Tag Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#TagDevice</p>
+  <div class="comment">
+   <span class="markdown">Tag Device such as QR code or bar code.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#http://purl.oclc.org/NET/ssnx/ssn#Device" title="http://purl.oclc.org/NET/ssnx/ssn#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="VirtualEntity">
+  <h3>Virtual Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#VirtualEntity</p>
+  <div class="comment">
+   <span class="markdown">Computational or data element representing a Physical Entity. Virtual Entities can be either Active or Passive Digital Entities. Physical Entities are represented in the digital world by a Virtual Entity. This term is also referred to as “virtual counterpart” in the literature (Ro¨mer et al. 2002), but using the same root term “entity” in both concepts clearer shows the relationship of these concepts. There are many kinds of digital representations of Physical Entities: 3D models, avatars, database entries, objects (or instances of a class in an object-oriented programming language), and even a social-network account could be viewed as such a representation, because it digitally represents certain aspects of its human owner, such as a photograph or a list of his hobbies. Enabling Things to Talk: Designing IoT solutions with the IoT Architectural Reference Model, Alessandro Bassi, Martin Bauer, Martin Fiedler, Thorsten Kramp, Rob van Kranenburg, Sebastian Lange, Stefan Meissner</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Entity" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#exposedBy" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposedBy"> <span>exposed By</span> </a></li>
+  <li><a href="#exposes" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposes"> <span>exposes</span> </a></li>
+  <li><a href="#hasAttribute" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasAttribute"> <span>has Attribute</span> </a></li>
+  <li><a href="#hasCoverage" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasCoverage"> <span>has Coverage</span> </a></li>
+  <li><a href="#hasMetadata" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasMetadata"> <span>has Metadata</span> </a></li>
+  <li><a href="#hasQuantityKind" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind"> <span>has Quantity Kind</span> </a></li>
+  <li><a href="#hasSensingDevice" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasSensingDevice"> <span>has Sensing Device</span> </a></li>
+  <li><a href="#http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem" title="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem"> <span>has Sub System</span> </a></li>
+  <li><a href="#hasUnit" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasUnit"> <span>has Unit</span> </a></li>
+  <li><a href="#isAssociatedWith" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isAssociatedWith"> <span>is Associated With</span> </a></li>
+  <li><a href="#isSubSystemOf" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isSubSystemOf"> <span>is Sub System Of</span> </a></li>
+  <li><a href="#http://www.w3.org/2003/01/geo/wgs84_pos#location" title="http://www.w3.org/2003/01/geo/wgs84_pos#location"> <span>location</span> </a></li>
+  <li><a href="#http://purl.oclc.org/NET/ssnx/ssn#onPlatform" title="http://purl.oclc.org/NET/ssnx/ssn#onPlatform"> <span>on Platform</span> </a></li>
+ </ul>
+ <div class="entity" id="exposedBy">
+  <h3>exposed By<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposedBy</p>
+  <div class="comment">
+   <span class="markdown">A device is exposed by a service.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://purl.oclc.org/NET/ssnx/ssn#Device" title="http://purl.oclc.org/NET/ssnx/ssn#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Service" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service">Service</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#exposes" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposes">exposes</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="exposes">
+  <h3>exposes<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposes</p>
+  <div class="comment">
+   <span class="markdown">For service-oriented queries. The inverse of exposedBy.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Service" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service">Service</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://purl.oclc.org/NET/ssnx/ssn#Device" title="http://purl.oclc.org/NET/ssnx/ssn#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#exposedBy" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#exposedBy">exposed By</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAttribute">
+  <h3>has Attribute<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasAttribute</p>
+  <div class="comment">
+   <span class="markdown">Links the devices with their attributes.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Entity" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#Object" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Object">Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Attribute" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Attribute">Attribute</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCoverage">
+  <h3>has Coverage<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasCoverage</p>
+  <div class="comment">
+   <span class="markdown">Links the devices with their coverages.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://purl.oclc.org/NET/ssnx/ssn#Device" title="http://purl.oclc.org/NET/ssnx/ssn#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Coverage" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Coverage">Coverage</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMetadata">
+  <h3>has Metadata<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasMetadata</p>
+  <div class="comment">
+   <span class="markdown">Links any concept with metadata about that concept.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Metadata" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Metadata">Metadata</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasQuantityKind">
+  <h3>has Quantity Kind<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind</p>
+  <div class="comment">
+   <span class="markdown">Links a sensor or an attribute with the quantity kind it measures (e.g. A sensor -sensor1- measures temperature: sensor1 hasQuantityKind temperature).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Attribute" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Attribute">Attribute</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="http://purl.oclc.org/NET/ssnx/ssn#Sensor" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.org/NET/ssnx/qu/qu#QuantityKind" target="_blank" title="http://purl.org/NET/ssnx/qu/qu#QuantityKind">Quantity Kind</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSensingDevice">
+  <h3>has Sensing Device<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasSensingDevice</p>
+  <div class="comment">
+   <span class="markdown">Links a sensor with a sensing device the same way as SSN.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.oclc.org/NET/ssnx/ssn#Sensor" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://purl.oclc.org/NET/ssnx/ssn#SensingDevice" title="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice">Sensing Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem">
+  <h3>has Sub System<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.oclc.org/NET/ssnx/ssn#System" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#System">System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.oclc.org/NET/ssnx/ssn#System" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#System">System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isSubSystemOf" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isSubSystemOf">is Sub System Of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasUnit">
+  <h3>has Unit<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasUnit</p>
+  <div class="comment">
+   <span class="markdown">Links the sensor with the units of the quantity kind it measures (e.g. A sensor -sensor1- measures temperature in Celsius: senso1 hasUnit celsius).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.oclc.org/NET/ssnx/ssn#Sensor" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#Sensor">Sensor</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.org/NET/ssnx/qu/qu#Unit" target="_blank" title="http://purl.org/NET/ssnx/qu/qu#Unit">Unit</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isAssociatedWith">
+  <h3>is Associated With<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isAssociatedWith</p>
+  <div class="comment">
+   <span class="markdown">Defines the associations between objects and sensors (e.g. A table (object) has an attribute (temperature at the table) which is associated with a sensor (the temperature sensor of the room).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Entity" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#Object" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Object">Object</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Service" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service">Service</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isSubSystemOf">
+  <h3>is Sub System Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isSubSystemOf</p>
+  <div class="comment">
+   <span class="markdown">This defines that a devices system is a subsystem of another system. For example, a multi-sensor device is a subsystem of a smart building testbed. This is the inverse of the SSN object property "hasSubSystem". It allows a graph to start from a subsystem. This is useful for resource-centric graphs.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.oclc.org/NET/ssnx/ssn#System" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#System">System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.oclc.org/NET/ssnx/ssn#System" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#System">System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem" title="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem">has Sub System</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+  <h3>location<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#location</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.oclc.org/NET/ssnx/ssn#onPlatform">
+  <h3>on Platform<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/ssnx/ssn#onPlatform</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.oclc.org/NET/ssnx/ssn#System" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#System">System</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://purl.oclc.org/NET/ssnx/ssn#Platform" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#Platform">Platform</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#endpoint" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#endpoint"> <span>endpoint</span> </a></li>
+  <li><a href="#id" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#id"> <span>id</span> </a></li>
+  <li><a href="#interfaceDescription" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription"> <span>interface Description</span> </a></li>
+  <li><a href="#interfaceType" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceType"> <span>interface Type</span> </a></li>
+  <li><a href="#isMobile" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isMobile"> <span>is Mobile</span> </a></li>
+  <li><a href="#isOnline" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isOnline"> <span>is Online</span> </a></li>
+  <li><a href="#metadataType" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataType"> <span>metadata Type</span> </a></li>
+  <li><a href="#metadataValue" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataValue"> <span>metadata Value</span> </a></li>
+  <li><a href="#radius" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#radius"> <span>radius</span> </a></li>
+ </ul>
+ <div class="entity" id="endpoint">
+  <h3>endpoint<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#endpoint</p>
+  <div class="comment">
+   <span class="markdown">Endpoint of the service. It is usually a URL where the service is available.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Service" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service">Service</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="id">
+  <h3>id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#id</p>
+  <div class="comment">
+   <span class="markdown">The ID of the Device or Entity</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Entity" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#http://purl.oclc.org/NET/ssnx/ssn#Device" title="http://purl.oclc.org/NET/ssnx/ssn#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="interfaceDescription">
+  <h3>interface Description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription</p>
+  <div class="comment">
+   <span class="markdown">Interface Description of the service, e.g WADL, WSDL, NGSI9 etc.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Service" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service">Service</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="interfaceType">
+  <h3>interface Type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceType</p>
+  <div class="comment">
+   <span class="markdown">Defines the type of interface of the service endpoint, e.g. RESTful, NGSI-9, MQTT, CoAP etc.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Service" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service">Service</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isMobile">
+  <h3>is Mobile<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isMobile</p>
+  <div class="comment">
+   <span class="markdown">Is the Device mobile? This can be used by an IoT management platform to enable tracking of the device's location.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://purl.oclc.org/NET/ssnx/ssn#Platform" target="_blank" title="http://purl.oclc.org/NET/ssnx/ssn#Platform">Platform</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isOnline">
+  <h3>is Online<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#isOnline</p>
+  <div class="comment">
+   <span class="markdown">Is the IoT Service exposing the Resource, or associated with the Entity, online?</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Service" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service">Service</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="metadataType">
+  <h3>metadata Type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataType</p>
+  <div class="comment">
+   <span class="markdown">Defines the type pf the metadata value (e.g. resolution of the sensor).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Metadata" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Metadata">Metadata</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="metadataValue">
+  <h3>metadata Value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#metadataValue</p>
+  <div class="comment">
+   <span class="markdown">Value of the metadata</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Metadata" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Metadata">Metadata</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="radius">
+  <h3>radius<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#radius</p>
+  <div class="comment">
+   <span class="markdown">Specifies the radius of a circle coverage defined by a point -the center of the circle- and its radius.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Circle" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Circle">Circle</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#http://www.w3.org/2003/01/geo/wgs84_pos#alt" title="http://www.w3.org/2003/01/geo/wgs84_pos#alt"> <span>alt</span> </a></li>
+  <li><a href="#altRelative" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative"> <span>alt Relative</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/bibliographicCitation" title="http://purl.org/dc/elements/1.1/bibliographicCitation"> <span>bibliographic Citation</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/contributor" title="http://purl.org/dc/elements/1.1/contributor"> <span>contributor</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/date" title="http://purl.org/dc/elements/1.1/date"> <span>date</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/dateSubmitted" title="http://purl.org/dc/elements/1.1/dateSubmitted"> <span>date Submitted</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/description" title="http://purl.org/dc/elements/1.1/description"> <span>description</span> </a></li>
+  <li><a href="#http://www.w3.org/2003/01/geo/wgs84_pos#lat" title="http://www.w3.org/2003/01/geo/wgs84_pos#lat"> <span>lat</span> </a></li>
+  <li><a href="#http://www.w3.org/2003/01/geo/wgs84_pos#long" title="http://www.w3.org/2003/01/geo/wgs84_pos#long"> <span>long</span> </a></li>
+  <li><a href="#relativeLocation" title="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation"> <span>relative Location</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights"> <span>rights</span> </a></li>
+  <li><a href="#http://purl.org/dc/elements/1.1/title" title="http://purl.org/dc/elements/1.1/title"> <span>title</span> </a></li>
+ </ul>
+ <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#alt">
+  <h3>alt<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#alt</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="altRelative">
+  <h3>alt Relative<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative</p>
+  <div class="comment">
+   <span class="markdown">Relative Altitude can be used in place of an absolute altitude, especially in buildings, where it makes more sense to locate by levels or floors. For example the value "0" would indicate "ground floor", and "1" would indicate "1st floor" and so on.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/bibliographicCitation">
+  <h3>bibliographic Citation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/bibliographicCitation</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/contributor">
+  <h3>contributor<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/contributor</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/creator</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/date">
+  <h3>date<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/date</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/dateSubmitted">
+  <h3>date Submitted<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/dateSubmitted</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/description">
+  <h3>description<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/description</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+  <h3>lat<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#lat</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+  <h3>long<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2003/01/geo/wgs84_pos#long</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="relativeLocation">
+  <h3>relative Location<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation</p>
+  <div class="comment">
+   <span class="markdown">Relative Location is used to provide a place for where the Device is in. For example, Geonames URIs can be used to represent a place, city, area, or region. For "University of Surrey" this would be "http://sws.geonames.org/6695971/"</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/rights">
+  <h3>rights<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/rights</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/elements/1.1/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/elements/1.1/title</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
