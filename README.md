@@ -1,10 +1,10 @@
-# IoT-Lite Ontology (Working Draft)
+# IoT-Lite Ontology
 
 ### About
 
 IoT-Lite ontology is a lightweight ontology to represent Internet of Things (IoT) resources, entities and services. IoT-Lite is an instantiation of the [SSN ontology](http://www.w3.org/2005/Incubator/ssn/ssnx/ssn). The lightweight allow the representation and use of IoT platforms without consuming excessive processing time when querying the ontology. However it is also a meta ontology that can be extended in order to represent IoT concepts in a more detailed way in different domains. It also can be combined with ontologies representing IoT data streams such as [SAO ontology](http://purl.oclc.org/NET/UNIS/sao/sao#). Following best practices in ontology engineering IoT-Lite is meant to be used with a quantity taxonomy, such as [qu-taxo](http://purl.oclc.org/NET/UNIS/fiware/iot-lite/qu-taxo#) or [m3-lite](http://purl.org/iot/vocab/m3-lite#), that allows the discovery and interoperability of IoT resources in heterogeneous platforms using a common vocabulary.
 
-###Status of this Document
+### Status of this Document
 
 **This is a work in progress and as such is subject to change.** Comments are very welcome, please open an issue in this repository.
 
